@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* CSS da Página Principal*/
+body{
+    background-color: #f1f1f1;
+}
+
+.whats img{
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+div#largura-pagina{
+    width: 85%;
+    margin: auto;
+}
+
+h3{
+    font-size: 43px;
+    padding: 70px;
+}
+
+nav{
+    background-color: rgba(123, 104, 238);
+    height: 60px;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    margin-right: 100px;
+   
+}
+
+li{
+    display: inline-block;
+    line-height: 60px;
+}
+
+a{
+    text-decoration: none;
+    color:#ffff;
+    padding: 20px;
+}
+
+a:hover{
+    color:#000;
+    border-bottom: 1px solid yellow;
+}
+
+/*********************************************************/
+/* CSS da página FORUM*/
+
+h1{
+    padding: 70px 0 25px 0;
+    font-size: 27px;
+    line-height: 40px;
+}
+
+span{
+    color: crimson;
+}
+
+section#content-1{
+    width: 60%;
+    float: left;
+}
+
+img{
+    width: 100%;
+}
+
+p.p-texto{
+    font-size: 15px;
+    color: rgba(0,0,0,.8);
+    line-height: 40px;
+    margin: 20px 0;
+    font-family: 'Ubuntu';
+    text-align: justify;
+}
+
+/***********************************************************/
+/* AREA DE POSTAGEM*/
+
+h2{
+    font-family: 'Ubunto';
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+form img{
+    width: 85px;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+textarea{
+    height: 100px;
+    width: 85%;
+    border: none;
+    padding: 7px;
+    font-size: 14px;
+    margin: 9px;
+    font-family: 'Ubunto';
+    outline: none;
+    display: block;
+    float: left;
+}
+
+input[type=submit]
+{
+    font-size: 'Arial black';
+    width: 220px;
+    height: 52px;
+    color: #fff;
+    background-color: rgb(123,104,238);
+    border: none;
+    border-radius: 5px;
+    transform: .4s ease;
+    opacity: 0.6;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    opacity: 1;
+}
+
+/*************************************************************/
+/* AREA DE COMENTARIOS*/
+.area-comentario{
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    padding: 10px;
+}
+.area-comentario img{
+    width: 80px;
+    float: left;
+    padding-right: 10px;
+}
+
+.area-comentario h3{
+    float: left;
+    color: rgb(0,0,139);
+    font-size: 12pt;
+    padding: 5px 10px 5px 0;
+}
+
+/*HORARIO e DATA*/
+.area-comentario h4{
+    font-size: 10pt;
+    color: rgba(0,0,0,.6);
+    line-height: 30px;
+}
+
+.area-comentario h4 a{
+    color: #000;
+}
+
+.area-comentario p{
+    line-height: 25px;
+}
+/************************************/
+/*COLUNA A DIREITA DO BLOG*/
+section#conteudo-2,section#conteudo-3{
+    width: 40%;
+    float: left;
+}
+
+section#conteudo-2 div,section#conteudo-3 div{
+    width: 70%;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 60px 20px;
+    margin: 50px auto 0 auto;
+}
+.titulo-strong{
+    text-align: center;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+section#conteudo-2 img{
+    width: 100%;
+}
+
+section#conteudo-2 p, section#conteudo-3 p{
+    width: 75%;
+    font-family: 'Ubunto';
+    color: rgba(0,0,0,.8);
+    line-height: 20pt;
+    margin: 20px auto;
+}
+
+h5{
+    text-align: center;
+    margin-top: 20px;
+}
+
