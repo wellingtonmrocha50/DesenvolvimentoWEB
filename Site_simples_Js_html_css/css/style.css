@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),
+    url("img/fundo.jpg");
+    background-repeat: round;
+}
+
+img{
+    width: 350px;
+    animation: float 3s ease-in-out infinite;
+    
+}
+/******Keyframe mario**********/
+
+@keyframes float{
+    
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+button{
+    padding: 12px 20px 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    font-size: 1rem;
+    margin-top: 35%;
+    margin-left: -30%;
+    transition: 0.4s ease;
+    opacity: .7;
+    
+}
+button:hover{
+    opacity: 1;
+}
+
+.btn-visitante{
+    padding: 11px 40px 11px 40px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    font-size: 1.2rem;
+    margin-top: 35%;
+    margin-left: 30px;
+    transition: 0.4s ease;
+    opacity: .7;
+}
+.btn-visitante:hover{
+    opacity: 1;
+}
+
+/**********MODAL******************/
+
+#open-modal{
+    background-color: #007bff;
+}
+
+#fade,#modal{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 5;
+}
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    z-index: 10;
+    width: 500px;
+    height: 550px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.modal-body{
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+#modal.hide,#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide{
+    top: 0;
+}
+
