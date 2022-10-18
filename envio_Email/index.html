@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Envio de Email</title>
+</head>
+<body>
+    <!---BASTA Trocar o email para qual vc quer enviar seu EMAIL-->
+    <h1>Envie Seu Email</h1>
+    <form action="https://formsubmit.co/wellingtonmrocha50@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Digite seu Nome" required>
+        <input type="email" name="email" placeholder="Digite seu Emmail" required>
+
+        <textarea cols="30" rows="10" name="message" placeholder="Digite sua mensagem " required></textarea>
+        <button type="submit"><a href="./index.html"></a>Enviar</button>
+
+        <!--(Subject) troca o cabeçalho exemplo abaixo no VALUE (NOVO CONTATO)-->
+        <input type="hidden" name="_subject" value="Novo Contato">
+        <!--(HONEY) evita que os EMAILs seja enviados como SPAM-->
+        <input type="text" name="_honey" style="display:none">
+        <!--o codigo abaixo desabilita o CAPTCHA-->
+        <input type="hidden" name="_captcha" value="false">
+   </form>
+</body>
+</html>
